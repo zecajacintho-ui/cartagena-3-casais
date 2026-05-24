@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Cartagena de Indias — roteiro de 5 dias para 3 casais, 9 a 13 de julho de 2026.">
+<title>Cartagena de Indias · 3 Casais · Julho 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --terra:#bd5a33; --terra-d:#9c4626; --orange:#e08a4b; --turq:#1f8a8a; --turq-d:#176b6b;
+  --sand:#f7eedd; --cream:#fcf7ee; --ink:#2a2420; --muted:#7a6f63; --line:#e7dac6;
+  --shadow:0 18px 50px rgba(60,40,20,.16);
+  --serif:"Playfair Display",Georgia,serif; --display:"Cormorant Garamond",Georgia,serif;
+  --sans:"Inter",-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--ink);background:var(--cream);line-height:1.7;font-weight:300;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:600;line-height:1.12;letter-spacing:.2px}
+img{max-width:100%;display:block}
+a{color:var(--terra-d);text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+.eyebrow{font-family:var(--sans);font-weight:600;letter-spacing:.32em;text-transform:uppercase;
+  font-size:.72rem;color:var(--turq)}
+.section{padding:110px 0}
+.section h2{font-size:clamp(2rem,4.4vw,3.3rem);margin:.35em 0 .5em;color:var(--ink)}
+.lead{font-family:var(--display);font-size:clamp(1.25rem,2.3vw,1.7rem);color:#4a4138;font-weight:400;line-height:1.5}
+.center{text-align:center}.center .lead{max-width:760px;margin:0 auto}
+.reveal{opacity:0;transform:translateY(34px);transition:opacity 1s ease,transform 1s ease}
+.reveal.in{opacity:1;transform:none}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;
+  padding:20px 30px;transition:background .4s,padding .4s,box-shadow .4s}
+nav.solid{background:rgba(252,247,238,.96);box-shadow:0 6px 24px rgba(60,40,20,.08);padding:13px 30px;backdrop-filter:blur(8px)}
+.brand{font-family:var(--serif);font-size:1.25rem;font-weight:700;color:#fff;letter-spacing:.5px;transition:color .4s}
+nav.solid .brand{color:var(--terra-d)}
+.brand small{display:block;font-family:var(--sans);font-weight:500;letter-spacing:.3em;font-size:.56rem;text-transform:uppercase;opacity:.85}
+.navlinks{display:flex;gap:26px}
+.navlinks a{color:#fff;font-size:.82rem;font-weight:500;letter-spacing:.04em;opacity:.92;transition:color .3s}
+nav.solid .navlinks a{color:var(--ink)}
+.navlinks a:hover{color:var(--orange)}
+.navtoggle{display:none;background:none;border:0;cursor:pointer;font-size:1.6rem;color:#fff}
+nav.solid .navtoggle{color:var(--terra-d)}
+
+/* HERO */
+.hero{height:100svh;min-height:600px;position:relative;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;overflow:hidden}
+.hero .bg{position:absolute;inset:0;background:url('img/walls_sunset.jpg') center/cover no-repeat;transform:scale(1.08)}
+.hero .scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,12,8,.45) 0%,rgba(20,12,8,.2) 40%,rgba(40,20,10,.65) 100%)}
+.hero .inner{position:relative;z-index:2;padding:0 22px;max-width:900px}
+.hero .eyebrow{color:#ffd9b0}
+.hero h1{font-size:clamp(2.8rem,8.5vw,6rem);color:#fff;margin:.18em 0;text-shadow:0 4px 30px rgba(0,0,0,.4);font-weight:700}
+.hero .dates{font-family:var(--display);font-size:clamp(1.1rem,2.6vw,1.7rem);letter-spacing:.06em;font-weight:500}
+.hero .sub{margin-top:6px;font-size:.92rem;letter-spacing:.34em;text-transform:uppercase;opacity:.9}
+.scrolldown{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);z-index:2;color:#fff;font-size:1.6rem;animation:bob 2s infinite}
+@keyframes bob{0%,100%{transform:translate(-50%,0)}50%{transform:translate(-50%,10px)}}
+
+/* SPLIT */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.split.rev .txt{order:2}
+.split img{border-radius:6px;box-shadow:var(--shadow);height:520px;width:100%;object-fit:cover}
+.split p{margin:14px 0;color:#4a4138}
+
+/* BAIRROS */
+.hoods{display:grid;grid-template-columns:repeat(2,1fr);gap:26px;margin-top:20px}
+.hood{position:relative;border-radius:8px;overflow:hidden;box-shadow:var(--shadow);min-height:340px;display:flex;align-items:flex-end;color:#fff}
+.hood img{position:absolute;inset:0;height:100%;width:100%;object-fit:cover;transition:transform 1.1s ease}
+.hood:hover img{transform:scale(1.07)}
+.hood .grad{position:absolute;inset:0;background:linear-gradient(180deg,transparent 35%,rgba(20,12,8,.82))}
+.hood .c{position:relative;z-index:2;padding:26px}
+.hood h3{color:#fff;font-size:1.7rem}
+.hood p{font-size:.92rem;opacity:.95;margin-top:6px}
+.chip{display:inline-block;background:var(--turq);color:#fff;border-radius:30px;padding:3px 12px;font-size:.7rem;font-weight:600;letter-spacing:.04em;font-family:var(--sans)}
+
+/* HOTÉIS */
+.banner-note{background:linear-gradient(135deg,var(--turq),var(--turq-d));color:#fff;border-radius:10px;padding:20px 26px;
+  margin:8px 0 34px;display:flex;gap:16px;align-items:center;font-size:.98rem;box-shadow:var(--shadow)}
+.banner-note b{font-weight:600}
+.hotels{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.hotel{background:#fff;border:1px solid var(--line);border-radius:10px;padding:22px 24px;transition:transform .35s,box-shadow .35s;display:flex;flex-direction:column;gap:8px}
+.hotel:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.hotel .top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.hotel h3{font-size:1.32rem;line-height:1.15}
+.hotel .score{background:var(--terra);color:#fff;border-radius:8px;padding:5px 9px;font-weight:600;font-family:var(--sans);font-size:.9rem;white-space:nowrap}
+.hotel .where{font-size:.82rem;color:var(--turq-d);font-weight:600;letter-spacing:.02em}
+.hotel .price{margin-top:auto;padding-top:10px;border-top:1px dashed var(--line)}
+.hotel .price .big{font-family:var(--serif);font-size:1.45rem;color:var(--terra-d);font-weight:600}
+.hotel .price .small{font-size:.82rem;color:var(--muted)}
+.hotel .couple{color:var(--turq-d);font-weight:600}
+.btn{display:inline-block;margin-top:10px;background:var(--terra);color:#fff;border-radius:30px;padding:8px 18px;font-size:.82rem;font-weight:600;letter-spacing:.03em;transition:background .3s;align-self:flex-start}
+.btn:hover{background:var(--terra-d)}
+.btn.ghost{background:transparent;color:var(--terra-d);border:1.5px solid var(--terra)}
+.btn.ghost:hover{background:var(--terra);color:#fff}
+
+/* ROTEIRO */
+.timeline{position:relative;margin-top:20px}
+.day{background:#fff;border:1px solid var(--line);border-left:5px solid var(--turq);border-radius:10px;padding:24px 28px;margin:18px 0;box-shadow:0 6px 20px rgba(60,40,20,.05)}
+.day .dnum{font-family:var(--sans);font-weight:600;letter-spacing:.3em;text-transform:uppercase;font-size:.72rem;color:var(--turq)}
+.day h3{font-size:1.5rem;margin:2px 0 10px;color:var(--ink)}
+.day .row{display:flex;gap:12px;margin:8px 0;align-items:baseline}
+.day .row b{color:var(--terra-d);min-width:74px;font-weight:600;font-size:.86rem;letter-spacing:.04em;font-family:var(--sans)}
+.tag{display:inline-block;background:var(--sand);color:var(--terra-d);border-radius:20px;padding:2px 10px;font-size:.74rem;font-weight:600;font-family:var(--sans)}
+
+/* RESTAURANTES */
+.rgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:14px}
+.rcard{background:#fff;border:1px solid var(--line);border-radius:10px;padding:18px 20px;transition:transform .3s,box-shadow .3s}
+.rcard:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.rcard h4{font-size:1.18rem}
+.rcard .cui{font-size:.86rem;color:var(--muted);margin:4px 0 8px}
+.rcard .pp{color:var(--turq-d);font-weight:600;font-size:.92rem;font-family:var(--sans)}
+.rcard .badge{display:inline-block;background:var(--turq);color:#fff;border-radius:20px;padding:2px 9px;font-size:.66rem;font-weight:600;font-family:var(--sans);margin-top:8px}
+
+/* MÚSICA / venues */
+.vgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:14px}
+.venue{background:#fff;border:1px solid var(--line);border-radius:10px;padding:18px 22px}
+.venue h4{font-size:1.18rem}
+.venue .g{font-size:.8rem;color:var(--turq-d);font-weight:600;text-transform:uppercase;letter-spacing:.08em}
+.venue p{font-size:.9rem;color:#4a4138;margin-top:5px}
+
+/* VIDEO facade */
+.ytf{position:relative;border-radius:10px;overflow:hidden;cursor:pointer;box-shadow:var(--shadow);aspect-ratio:16/9;background:#000}
+.ytf img{width:100%;height:100%;object-fit:cover;opacity:.86;transition:opacity .3s,transform 1s}
+.ytf:hover img{opacity:1;transform:scale(1.04)}
+.ytf .play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
+.ytf .play span{width:74px;height:74px;border-radius:50%;background:rgba(189,90,51,.92);color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.7rem;padding-left:5px;box-shadow:0 8px 24px rgba(0,0,0,.35);transition:transform .3s}
+.ytf:hover .play span{transform:scale(1.12)}
+.ytf .cap{position:absolute;left:0;right:0;bottom:0;padding:14px 16px;color:#fff;font-size:.86rem;font-weight:500;
+  background:linear-gradient(transparent,rgba(0,0,0,.7))}
+.ytf iframe{width:100%;height:100%;border:0;position:absolute;inset:0}
+.vid2{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}
+
+/* GALERIA */
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:18px}
+.gallery img{height:210px;width:100%;object-fit:cover;border-radius:6px;transition:transform .8s,filter .4s;filter:saturate(.96)}
+.gallery img:hover{transform:scale(1.04);filter:saturate(1.1)}
+.gallery a:nth-child(1){grid-column:span 2;grid-row:span 2}
+.gallery a:nth-child(1) img{height:430px}
+
+/* PROGRAMAS locais */
+.local{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:stretch}
+.local .card{background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden;box-shadow:0 6px 20px rgba(60,40,20,.05)}
+.local .card img{height:230px;width:100%;object-fit:cover}
+.local .card .b{padding:20px 24px}
+.local .card h3{font-size:1.4rem;color:var(--ink)}
+.local .card p{font-size:.92rem;color:#4a4138;margin-top:8px}
+
+/* DAYTRIPS */
+.trip{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.trip img{border-radius:8px;box-shadow:var(--shadow);height:460px;width:100%;object-fit:cover}
+
+/* FOOTER */
+footer{background:var(--ink);color:#e8ddcd;text-align:center;padding:70px 24px 40px}
+footer h2{color:#fff;font-size:clamp(1.8rem,4vw,2.8rem)}
+footer .lead{color:#d8cab4}
+footer .fnote{font-size:.78rem;color:#9c8f7c;margin-top:26px;max-width:680px;margin-left:auto;margin-right:auto}
+footer a{color:var(--orange)}
+
+/* PLAYER */
+#player-host{position:fixed;width:200px;height:120px;right:-9999px;bottom:-9999px;opacity:0;pointer-events:none}
+.music{position:fixed;left:18px;bottom:18px;z-index:60;background:rgba(252,247,238,.97);border:1px solid var(--line);
+  border-radius:46px;box-shadow:var(--shadow);display:flex;align-items:center;gap:12px;padding:9px 16px 9px 10px;backdrop-filter:blur(8px);max-width:calc(100vw - 36px)}
+.music .play{background:var(--terra);color:#fff;border:0;border-radius:50%;width:50px;height:50px;font-size:1.25rem;cursor:pointer;display:flex;align-items:center;justify-content:center;flex:0 0 auto;transition:background .3s,transform .2s;padding-left:3px}
+.music .play:hover{background:var(--terra-d);transform:scale(1.06)}
+.music .play.on{padding-left:0}
+.music .lbl{font-size:.82rem;font-weight:600;color:var(--ink);white-space:nowrap;font-family:var(--sans)}
+.music .lbl small{display:block;font-weight:400;color:var(--muted);font-size:.68rem;letter-spacing:.02em}
+.music .ctrls{display:flex;align-items:center;gap:8px}
+.music button.ic{background:none;border:0;cursor:pointer;font-size:1.05rem;color:var(--terra-d);padding:4px}
+.music input[type=range]{width:84px;accent-color:var(--terra);cursor:pointer}
+.music.collapsed .lbl,.music.collapsed .ctrls{display:none}
+
+@media(max-width:860px){
+  .navlinks{position:fixed;top:0;right:-100%;height:100vh;width:74%;max-width:320px;background:var(--cream);
+    flex-direction:column;justify-content:center;align-items:center;gap:30px;transition:right .4s;box-shadow:-10px 0 40px rgba(0,0,0,.15)}
+  .navlinks.open{right:0}
+  .navlinks a{color:var(--ink)!important;font-size:1.1rem}
+  .navtoggle{display:block;z-index:60}
+  .split,.trip{grid-template-columns:1fr;gap:28px}
+  .split.rev .txt{order:0}
+  .split img,.trip img{height:300px}
+  .hoods,.hotels,.rgrid,.vgrid,.local,.vid2,.gallery{grid-template-columns:1fr!important}
+  .gallery a:nth-child(1){grid-column:span 1;grid-row:span 1}
+  .gallery a:nth-child(1) img,.gallery img{height:230px}
+  .section{padding:72px 0}
+  .music .lbl small{display:none}
+  .hero .inner{max-width:100%;padding:0 16px}
+  .hero h1{font-size:2.35rem;line-height:1.08}
+  .hero .eyebrow{letter-spacing:.14em;font-size:.58rem}
+  .hero .dates{font-size:1.02rem;line-height:1.45}
+  .hero .sub{font-size:.66rem;letter-spacing:.16em}
+}
+h1{overflow-wrap:break-word}
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <div class="brand">Cartagena de Indias<small>Viagem dos 3 casais</small></div>
+  <button class="navtoggle" id="navtoggle" aria-label="menu">☰</button>
+  <div class="navlinks" id="navlinks">
+    <a href="#espirito">A viagem</a>
+    <a href="#bairros">Bairros</a>
+    <a href="#hoteis">Hotéis</a>
+    <a href="#roteiro">Roteiro</a>
+    <a href="#gastronomia">Gastronomia</a>
+    <a href="#musica">Música</a>
+    <a href="#passeios">Passeios</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="bg" id="herobg"></div>
+  <div class="scrim"></div>
+  <div class="inner">
+    <p class="eyebrow">Caribe Colombiano · 9 a 13 de Julho de 2026</p>
+    <h1>Cartagena de Indias</h1>
+    <p class="dates">Cinco dias entre muralhas douradas, mar turquesa e noites de salsa</p>
+    <p class="sub">Três casais · uma cidade inesquecível</p>
+  </div>
+  <div class="scrolldown">⌄</div>
+</header>
+
+<!-- ESPÍRITO -->
+<section class="section" id="espirito">
+  <div class="wrap">
+    <div class="split">
+      <div class="txt reveal">
+        <p class="eyebrow">O espírito da viagem</p>
+        <h2>Romance colonial, sabor caribenho</h2>
+        <p class="lead">Seis amigos atravessando portões de pedra de quatro séculos quando o calor afrouxa e a luz vira cor de mel.</p>
+        <p>As ruas de paralelepípedo cheiram a frutas e a mar; sacadas transbordam buganvílias; de uma esquina vem um trompete, de outra, o aroma de peixe frito. O roteiro foi desenhado para entregar três sensações: <b>a mesa</b> — comer maravilhosamente bem, do ceviche de pé na areia ao jantar premiado; <b>a música</b> — banda ao vivo todo dia, do son cubano ao jazz intimista; e <b>a água</b> — o azul impossível das ilhas e o pôr do sol na muralha. Sem pressa: dá para fazer quase tudo a pé e ainda sobrar tempo de espreguiçadeira.</p>
+      </div>
+      <div class="reveal"><img src="img/street_colorful.jpg" alt="Rua colonial colorida de Cartagena"></div>
+    </div>
+  </div>
+</section>
+
+<!-- BAIRROS -->
+<section class="section" id="bairros" style="background:var(--sand)">
+  <div class="wrap">
+    <div class="center reveal">
+      <p class="eyebrow">Onde ficar</p>
+      <h2>Quatro bairros, quatro climas</h2>
+      <p class="lead">Para andar a pé com restaurantes e atrações na porta, o coração histórico é imbatível — e a praia fica logo ali.</p>
+    </div>
+    <div class="hoods">
+      <div class="hood reveal"><img src="img/plaza_aduana.jpg" alt="Centro Histórico"><div class="grad"></div>
+        <div class="c"><h3>Centro Histórico</h3><p>O cartão-postal dentro das muralhas: praças, igrejas, os melhores restaurantes e hotéis-casa coloniais. Romântico e central.</p></div></div>
+      <div class="hood reveal"><img src="img/walls_day.jpg" alt="San Diego"><div class="grad"></div>
+        <div class="c"><h3>San Diego</h3><p>O canto mais tranquilo da cidade murada — mesma caminhabilidade, clima mais sereno e preços um pouco mais gentis.</p></div></div>
+      <div class="hood reveal"><img src="img/getsemani_art.jpg" alt="Getsemaní"><div class="grad"></div>
+        <div class="c"><h3>Getsemaní</h3><p>O bairro boêmio: arte de rua, vida noturna (Café Havana, Bazurto), ótima comida e clima jovem — a 10 min a pé do Centro.</p></div></div>
+      <div class="hood reveal"><img src="img/bocagrande_beach.jpg" alt="Bocagrande"><div class="grad"></div>
+        <div class="c"><h3>Bocagrande</h3><p>A faixa moderna à beira-mar: arranha-céus e praia na porta, a poucos minutos do Centro. Para quem quer mar logo ao acordar.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- HOTÉIS -->
+<section class="section" id="hoteis">
+  <div class="wrap">
+    <div class="center reveal">
+      <p class="eyebrow">Hospedagem · nota ≥ 9.0</p>
+      <h2>Onde dormir bem</h2>
+    </div>
+    <div class="banner-note reveal">
+      <div>💡</div>
+      <div>Os preços abaixo são o <b>TOTAL dos 3 quartos por 4 noites</b> (chegada 9/jul, saída 13/jul). Para enxergar de verdade, mostramos também o valor <b>por casal</b> — dividido entre os três, fica bem mais leve. Ordenados do mais econômico ao mais sofisticado, sem favorito: a escolha é de vocês.</div>
+    </div>
+    <div class="hotels">
+
+      <div class="hotel reveal"><div class="top"><h3>Casa del Tunel Lodge</h3><span class="score">9.2</span></div>
+        <div class="where">Getsemaní</div>
+        <div class="price"><span class="big">US$ 989</span> <span class="small">os 3 quartos · 4 noites</span><br>
+          <span class="couple">≈ US$ 330 por casal</span></div>
+        <a class="btn" href="https://www.booking.com/hotel/co/casa-del-tunel-lodge-in-getsemani.html?checkin=2026-07-09&checkout=2026-07-13&group_adults=6&no_rooms=3&selected_currency=USD" target="_blank" rel="noopener">Ver no Booking →</a></div>
+
+      <div class="hotel reveal"><div class="top"><h3>OZ Hotel Collection</h3><span class="score">9.4</span></div>
+        <div class="where">Bocagrande</div>
+        <div class="price"><span class="big">US$ 1.369</span> <span class="small">os 3 quartos · 4 noites</span><br>
+          <span class="couple">≈ US$ 456 por casal</span></div>
+        <a class="btn" href="https://www.booking.com/hotel/co/oz-collection.html?checkin=2026-07-09&checkout=2026-07-13&group_adults=6&no_rooms=3&selected_currency=USD" target="_blank" rel="noopener">Ver no Booking →</a></div>
+
+      <div class="hotel reveal"><div class="top"><h3>Hotel Kartaxa</h3><span class="score">9.3</span></div>
+        <div class="where">San Diego · dentro das muralhas</div>
+        <div class="price"><span class="big">US$ 1.503</span> <span class="small">os 3 quartos · 4 noites</span><br>
+          <span class="couple">≈ US$ 501 por casal</span></div>
+        <a class="btn" href="https://www.booking.com/hotel/co/hotel-kartaxa.html?checkin=2026-07-09&checkout=2026-07-13&group_adults=6&no_rooms=3&selected_currency=USD" target="_blank" rel="noopener">Ver no Booking →</a></div>
+
+      <div class="hotel reveal"><div class="top"><h3>GHL San Lázaro Art</h3><span class="score">9.0</span></div>
+        <div class="where">Pie de la Popa · de táxi ao Centro</div>
+        <div class="price"><span class="big">US$ 1.986</span> <span class="small">os 3 quartos · 4 noites</span><br>
+          <span class="couple">≈ US$ 662 por casal</span></div>
+        <a class="btn" href="https://www.booking.com/hotel/co/san-lazaro-art-lifestyle.html?checkin=2026-07-09&checkout=2026-07-13&group_adults=6&no_rooms=3&selected_currency=USD" target="_blank" rel="noopener">Ver no Booking →</a></div>
+
+      <div class="hotel reveal"><div class="top"><h3>Casa del Gobernador</h3><span class="score">9.2</span></div>
+        <div class="where">Centro · adults-only · piscina rooftop</div>
+        <div class="price"><span class="big">US$ 3.176</span> <span class="small">os 3 quartos · 4 noites</span><br>
+          <span class="couple">≈ US$ 1.059 por casal</span></div>
+        <a class="btn" href="https://www.booking.com/hotel/co/casa-del-gobernador.html?checkin=2026-07-09&checkout=2026-07-13&group_adults=6&no_rooms=3&selected_currency=USD" target="_blank" rel="noopener">Ver no Booking →</a></div>
+
+      <div class="hotel reveal"><div class="top"><h3>Casa Don Luis</h3><span class="score">9.0</span></div>
+        <div class="where">Centro · by Radisson</div>
+        <div class="price"><span class="big">US$ 3.312</span> <span class="small">os 3 quartos · 4 noites</span><br>
+          <span class="couple">≈ US$ 1.104 por casal</span></div>
+        <a class="btn" href="https://www.booking.com/hotel/co/casa-don-luis-by-faranda-boutique.html?checkin=2026-07-09&checkout=2026-07-13&group_adults=6&no_rooms=3&selected_currency=USD" target="_blank" rel="noopener">Ver no Booking →</a></div>
+
+      <div class="hotel reveal"><div class="top"><h3>Casa del Arzobispado</h3><span class="score">9.1</span></div>
+        <div class="where">Centro · spa</div>
+        <div class="price"><span class="big">US$ 3.556</span> <span class="small">os 3 quartos · 4 noites</span><br>
+          <span class="couple">≈ US$ 1.185 por casal</span></div>
+        <a class="btn" href="https://www.booking.com/hotel/co/casa-del-arzobispado-cartagena.html?checkin=2026-07-09&checkout=2026-07-13&group_adults=6&no_rooms=3&selected_currency=USD" target="_blank" rel="noopener">Ver no Booking →</a></div>
+
+      <div class="hotel reveal"><div class="top"><h3>Sofitel Barú</h3><span class="score">9.2</span></div>
+        <div class="where">Ilha de Barú · resort de praia</div>
+        <div class="price"><span class="big">US$ 4.309</span> <span class="small">os 3 quartos · 4 noites</span><br>
+          <span class="couple">≈ US$ 1.436 por casal</span></div>
+        <a class="btn" href="https://www.booking.com/hotel/co/sofitel-baru-calablanca.html?checkin=2026-07-09&checkout=2026-07-13&group_adults=6&no_rooms=3&selected_currency=USD" target="_blank" rel="noopener">Ver no Booking →</a></div>
+
+      <div class="hotel reveal"><div class="top"><h3>Casa San Agustín</h3><span class="score">9.7</span></div>
+        <div class="where">Centro · ícone de luxo</div>
+        <div class="price"><span class="big">US$ 5.444</span> <span class="small">os 3 quartos · 4 noites</span><br>
+          <span class="couple">≈ US$ 1.815 por casal</span></div>
+        <a class="btn" href="https://www.booking.com/hotel/co/casa-san-agustin.html?checkin=2026-07-09&checkout=2026-07-13&group_adults=6&no_rooms=3&selected_currency=USD" target="_blank" rel="noopener">Ver no Booking →</a></div>
+
+      <div class="hotel reveal"><div class="top"><h3>Casa Pestagua</h3><span class="score">9.6</span></div>
+        <div class="where">Centro · Relais &amp; Châteaux</div>
+        <div class="price"><span class="big">US$ 6.293</span> <span class="small">os 3 quartos · 4 noites</span><br>
+          <span class="couple">≈ US$ 2.098 por casal</span></div>
+        <a class="btn" href="https://www.booking.com/hotel/co/casa-pestagua-spa.html?checkin=2026-07-09&checkout=2026-07-13&group_adults=6&no_rooms=3&selected_currency=USD" target="_blank" rel="noopener">Ver no Booking →</a></div>
+
+    </div>
+    <p class="center" style="margin-top:22px;color:var(--muted);font-size:.86rem">Espiem por dentro:
+      <a href="https://www.youtube.com/watch?v=nQbMO1vrnUI" target="_blank" rel="noopener">Casa San Agustín</a> ·
+      <a href="https://www.youtube.com/watch?v=5aDRoIREpG0" target="_blank" rel="noopener">Sofitel Santa Clara</a> ·
+      <a href="https://www.youtube.com/watch?v=2rgkvF89SJg" target="_blank" rel="noopener">tour pelos hotéis de luxo</a></p>
+  </div>
+</section>
+
+<!-- ROTEIRO -->
+<section class="section" id="roteiro" style="background:var(--sand)">
+  <div class="wrap">
+    <div class="center reveal">
+      <p class="eyebrow">Dia a dia · 9 a 13 de julho</p>
+      <h2>O roteiro</h2>
+      <p class="lead">Começo de julho é a parte mais ensolarada do mês — manhãs perfeitas para o mar. Tudo a pé, exceto as ilhas e La Boquilla.</p>
+    </div>
+    <div class="timeline">
+      <div class="day reveal"><div class="dnum">Quinta · 9 jul</div><h3>Chegada &amp; primeiro gostinho</h3>
+        <div class="row"><b>Tarde</b><span>Chegada (voo de GRU com conexão), check-in e um banho para tirar a estrada.</span></div>
+        <div class="row"><b>Noite</b><span>Jantar leve para entrar no clima — <a href="https://www.google.com/maps/search/?api=1&query=La%20Cevicheria%20Cartagena" target="_blank" rel="noopener">La Cevichería</a> ou <a href="https://www.google.com/maps/search/?api=1&query=Cande%20restaurante%20Cartagena" target="_blank" rel="noopener">Candé</a> (com dançarinos). <span class="tag">US$ 25–58 / pessoa</span></span></div>
+        <div class="row"><b>Fecho</b><span>Caminhada noturna pela muralha, fresquinho e iluminado.</span></div>
+      </div>
+      <div class="day reveal"><div class="dnum">Sexta · 10 jul</div><h3>Centro, fortaleza &amp; noite de salsa</h3>
+        <div class="row"><b>Manhã</b><span>Walking tour pelo Centro, Plaza Santo Domingo e San Pedro Claver. <span class="tag">grátis (gorjeta) ou ~US$ 25</span></span></div>
+        <div class="row"><b>Tarde</b><span><a href="https://www.google.com/maps/search/?api=1&query=Castillo%20San%20Felipe%20de%20Barajas" target="_blank" rel="noopener">Castelo San Felipe</a> e <a href="https://www.google.com/maps/search/?api=1&query=Las%20Bovedas%20Cartagena" target="_blank" rel="noopener">Las Bóvedas</a>. Pôr do sol no <a href="https://www.google.com/maps/search/?api=1&query=Cafe%20del%20Mar%20Cartagena" target="_blank" rel="noopener">Café del Mar</a>, sobre a muralha. <span class="tag">~US$ 9</span></span></div>
+        <div class="row"><b>Noite</b><span>Jantar e emenda no <a href="https://www.google.com/maps/search/?api=1&query=Cafe%20Havana%20Cartagena" target="_blank" rel="noopener">Café Havana</a> para salsa ao vivo.</span></div>
+      </div>
+      <div class="day reveal"><div class="dnum">Sábado · 11 jul</div><h3>Dia de ilha — Rosário / Barú</h3>
+        <div class="row"><b>Dia</b><span>Saída de manhã (mar calmo), praia + snorkel nas <a href="https://www.google.com/maps/search/?api=1&query=Islas%20del%20Rosario" target="_blank" rel="noopener">Ilhas do Rosário</a> e/ou <a href="https://www.google.com/maps/search/?api=1&query=Playa%20Blanca%20Baru" target="_blank" rel="noopener">Barú</a>; almoço de frutos do mar em beach club. <span class="tag">~US$ 40–70 / pessoa</span></span></div>
+        <div class="row"><b>Noite</b><span>Jantar especial reservado — <a href="https://www.google.com/maps/search/?api=1&query=Carmen%20restaurante%20Cartagena" target="_blank" rel="noopener">Carmen</a> ou <a href="https://www.google.com/maps/search/?api=1&query=Celele%20Cartagena" target="_blank" rel="noopener">Celele</a>; drinks no <a href="https://www.google.com/maps/search/?api=1&query=Alquimico%20Cartagena" target="_blank" rel="noopener">Alquímico</a> (tem mocktails).</span></div>
+      </div>
+      <div class="day reveal"><div class="dnum">Domingo · 12 jul</div><h3>Domingo bem local + jazz</h3>
+        <div class="row"><b>Manhã</b><span>Peixe frito de domingo na praia de <a href="https://www.google.com/maps/search/?api=1&query=La%20Boquilla%20Cartagena" target="_blank" rel="noopener">La Boquilla</a> — ou food tour guiado no <a href="https://www.google.com/maps/search/?api=1&query=Mercado%20de%20Bazurto%20Cartagena" target="_blank" rel="noopener">Mercado de Bazurto</a>. <span class="tag">US$ 10–60</span></span></div>
+        <div class="row"><b>Tarde</b><span>Piscina e descanso, ou canoa pelos manguezais.</span></div>
+        <div class="row"><b>Noite</b><span><a href="https://www.google.com/maps/search/?api=1&query=La%20Vitrola%20Cartagena" target="_blank" rel="noopener">La Vitrola</a> (son cubano ao vivo) e jazz no <a href="https://www.google.com/maps/search/?api=1&query=Townhouse%20Hotel%20Cartagena" target="_blank" rel="noopener">Members Only</a>.</span></div>
+      </div>
+      <div class="day reveal"><div class="dnum">Segunda · 13 jul</div><h3>Últimas compras &amp; volta</h3>
+        <div class="row"><b>Manhã</b><span>Café, comprinhas em Las Bóvedas / Getsemaní.</span></div>
+        <div class="row"><b>Saída</b><span>Check-out e traslado ao aeroporto (a ~10–15 min do Centro).</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GASTRONOMIA -->
+<section class="section" id="gastronomia">
+  <div class="wrap">
+    <div class="center reveal">
+      <p class="eyebrow">À mesa</p>
+      <h2>Comer muito bem</h2>
+      <p class="lead">A Colômbia ainda não tem Guia Michelin — então a maior chancela da região é a lista <b>Latin America&rsquo;s / World&rsquo;s 50 Best</b>, e Cartagena brilha nela com o <b>Celele</b>.</p>
+    </div>
+    <div class="rgrid">
+      <div class="rcard reveal"><h4><a href="https://www.google.com/maps/search/?api=1&query=Celele%20Cartagena" target="_blank" rel="noopener">Celele</a></h4><div class="cui">Caribenha contemporânea · degustação</div><div class="pp">~US$ 78 / pessoa</div><span class="badge">World&rsquo;s 50 Best</span></div>
+      <div class="rcard reveal"><h4><a href="https://www.google.com/maps/search/?api=1&query=Carmen%20restaurante%20Cartagena" target="_blank" rel="noopener">Carmen</a></h4><div class="cui">Caribenha + técnica europeia · pátio romântico</div><div class="pp">US$ 68–110 / pessoa</div></div>
+      <div class="rcard reveal"><h4><a href="https://www.google.com/maps/search/?api=1&query=Restaurante%201621%20Sofitel%20Santa%20Clara" target="_blank" rel="noopener">1621</a></h4><div class="cui">Francesa + Caribe · salão histórico</div><div class="pp">US$ 78–122 / pessoa</div></div>
+      <div class="rcard reveal"><h4><a href="https://www.google.com/maps/search/?api=1&query=Marea%20by%20Rausch%20Cartagena" target="_blank" rel="noopener">Marea by Rausch</a></h4><div class="cui">Frutos do mar · melhor vista da baía</div><div class="pp">US$ 68–102 / pessoa</div></div>
+      <div class="rcard reveal"><h4><a href="https://www.google.com/maps/search/?api=1&query=La%20Vitrola%20Cartagena" target="_blank" rel="noopener">La Vitrola</a></h4><div class="cui">Clássico desde 1994 · banda cubana ao vivo</div><div class="pp">US$ 54–85 / pessoa</div><span class="badge">música ao vivo</span></div>
+      <div class="rcard reveal"><h4><a href="https://www.google.com/maps/search/?api=1&query=La%20Cevicheria%20Cartagena" target="_blank" rel="noopener">La Cevichería</a></h4><div class="cui">Ceviche &amp; frutos do mar · casual (o do Bourdain)</div><div class="pp">US$ 25–40 / pessoa</div></div>
+    </div>
+    <div class="vid2">
+      <div class="ytf reveal" data-id="BJVXLkiKRdk"><img src="https://i.ytimg.com/vi/BJVXLkiKRdk/hqdefault.jpg" alt="Celele"><div class="play"><span>▶</span></div><div class="cap">Celele — entre os melhores do mundo</div></div>
+      <div class="ytf reveal" data-id="tUz9SbJ0AiM"><img src="https://i.ytimg.com/vi/tUz9SbJ0AiM/hqdefault.jpg" alt="La Cevichería"><div class="play"><span>▶</span></div><div class="cap">La Cevichería — na rota de Anthony Bourdain</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- MÚSICA -->
+<section class="section" id="musica" style="background:var(--sand)">
+  <div class="wrap">
+    <div class="center reveal">
+      <p class="eyebrow">As noites</p>
+      <h2>Casas de show &amp; música</h2>
+      <p class="lead">Aqui a diversão é a banda e a dança — e todo lugar serve sucos naturais, água de coco e mocktails.</p>
+    </div>
+    <div class="vgrid">
+      <div class="venue reveal"><div class="g">Salsa ao vivo</div><h4><a href="https://www.google.com/maps/search/?api=1&query=Cafe%20Havana%20Cartagena" target="_blank" rel="noopener">Café Havana</a></h4><p>Getsemaní · o ícone, banda quente e pista cheia. Entrada ~US$ 10.</p></div>
+      <div class="venue reveal"><div class="g">Champeta · o som local</div><h4><a href="https://www.google.com/maps/search/?api=1&query=Bazurto%20Social%20Club%20Cartagena" target="_blank" rel="noopener">Bazurto Social Club</a></h4><p>Getsemaní · pátio aberto, banda local e aula de dança grátis. Qua–Sáb.</p></div>
+      <div class="venue reveal"><div class="g">Jazz · speakeasy</div><h4><a href="https://www.google.com/maps/search/?api=1&query=Townhouse%20Hotel%20Cartagena%20Members%20Only" target="_blank" rel="noopener">Members Only</a></h4><p>Centro (Hotel Townhouse) · banda da casa, clima intimista. Reserve.</p></div>
+      <div class="venue reveal"><div class="g">Coquetelaria · rooftop</div><h4><a href="https://www.google.com/maps/search/?api=1&query=Alquimico%20Cartagena" target="_blank" rel="noopener">Alquímico</a></h4><p>Centro · melhor bar de drinks, 3 andares + rooftop. Tem mocktails.</p></div>
+    </div>
+    <div class="vid2">
+      <div class="ytf reveal" data-id="eMGBMvTn-rg"><img src="https://i.ytimg.com/vi/eMGBMvTn-rg/hqdefault.jpg" alt="Café Havana"><div class="play"><span>▶</span></div><div class="cap">Café Havana — salsa ao vivo</div></div>
+      <div class="ytf reveal" data-id="2DvGX-EaDCA"><img src="https://i.ytimg.com/vi/2DvGX-EaDCA/hqdefault.jpg" alt="Cartagena em 3 dias"><div class="play"><span>▶</span></div><div class="cap">Cartagena em 3 dias — visão geral</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROGRAMAS LOCAIS -->
+<section class="section" id="local">
+  <div class="wrap">
+    <div class="center reveal">
+      <p class="eyebrow">O lado de quem mora aqui</p>
+      <h2>Programas bem locais</h2>
+    </div>
+    <div class="local">
+      <div class="card reveal"><img src="img/boquilla.jpg" alt="La Boquilla">
+        <div class="b"><h3>La Boquilla, domingo de chinelo</h3>
+          <p>Vila de pescadores ao norte: no domingo os locais comem <b>mojarra frita com arroz de coco</b> em barracas na praia. Autêntico e tranquilo — dá para emendar com passeio de canoa pelos manguezais. <span class="tag">almoço ~US$ 10–15</span></p>
+          <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=La%20Boquilla%20Cartagena" target="_blank" rel="noopener">No mapa →</a></div></div>
+      <div class="card reveal"><img src="img/plaza_coches_night.jpg" alt="Mercado / vida local">
+        <div class="b"><h3>Mercado de Bazurto, com guia</h3>
+          <p>O mercadão de verdade — caótico e cheio de sabor, onde Anthony Bourdain comeu. A dica é ir num <b>food tour guiado</b>: o guia conhece as melhores barracas e cuida da logística, então vocês curtem só a parte boa, com segurança. <span class="tag">food tour ~US$ 45–60</span></p>
+          <a class="btn ghost" href="https://www.getyourguide.com/cartagena-l362/" target="_blank" rel="noopener">Reservar tour →</a></div></div>
+    </div>
+    <div class="vid2">
+      <div class="ytf reveal" data-id="6-DI21Mlplg"><img src="https://i.ytimg.com/vi/6-DI21Mlplg/hqdefault.jpg" alt="La Boquilla"><div class="play"><span>▶</span></div><div class="cap">La Boquilla — vila &amp; manguezais</div></div>
+      <div class="ytf reveal" data-id="Cc-V0jg-hm4"><img src="https://i.ytimg.com/vi/Cc-V0jg-hm4/hqdefault.jpg" alt="Mercado de Bazurto"><div class="play"><span>▶</span></div><div class="cap">Mercado de Bazurto — a cozinha da Cecilia</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PASSEIOS / BATE-VOLTAS -->
+<section class="section" id="passeios" style="background:var(--sand)">
+  <div class="wrap">
+    <div class="trip">
+      <div class="reveal"><img src="img/baru.jpg" alt="Praia de Barú"></div>
+      <div class="txt reveal">
+        <p class="eyebrow">A água</p>
+        <h2>Ilhas do Rosário &amp; Barú</h2>
+        <p class="lead">O ponto alto da viagem: um dia inteiro no azul.</p>
+        <p>Saída de manhã, quando o mar está calmo, rumo às <a href="https://www.google.com/maps/search/?api=1&query=Islas%20del%20Rosario" target="_blank" rel="noopener">Ilhas do Rosário</a> e à <a href="https://www.google.com/maps/search/?api=1&query=Playa%20Blanca%20Baru" target="_blank" rel="noopener">Playa Blanca de Barú</a> — praia turquesa, snorkel e almoço de frutos do mar em beach club. <span class="tag">compartilhado ~US$ 40–70 / pessoa · lancha privativa ~US$ 700–1.200</span></p>
+        <a class="btn" href="https://www.getyourguide.com/cartagena-l362/" target="_blank" rel="noopener">Reservar passeio →</a>
+      </div>
+    </div>
+    <div class="vid2" style="margin-top:34px">
+      <div class="ytf reveal" data-id="tf9CgG6YQeE"><img src="https://i.ytimg.com/vi/tf9CgG6YQeE/hqdefault.jpg" alt="Ilhas do Rosário"><div class="play"><span>▶</span></div><div class="cap">Tour das Ilhas do Rosário</div></div>
+      <div class="reveal"><img src="img/rosario.jpg" alt="Beach club nas Ilhas do Rosário" style="height:100%;width:100%;object-fit:cover;border-radius:10px;box-shadow:var(--shadow)"></div>
+    </div>
+  </div>
+</section>
+
+<!-- GALERIA -->
+<section class="section" id="galeria">
+  <div class="wrap">
+    <div class="center reveal"><p class="eyebrow">Um aperitivo visual</p><h2>Cartagena em imagens</h2></div>
+    <div class="gallery reveal">
+      <a href="img/street_colorful2.jpg" target="_blank"><img src="img/street_colorful2.jpg" alt="Rua colonial"></a>
+      <a href="img/san_pedro.jpg" target="_blank"><img src="img/san_pedro.jpg" alt="San Pedro Claver"></a>
+      <a href="img/bovedas.jpg" target="_blank"><img src="img/bovedas.jpg" alt="Las Bóvedas"></a>
+      <a href="img/castillo.jpg" target="_blank"><img src="img/castillo.jpg" alt="Castelo San Felipe"></a>
+      <a href="img/plaza_aduana2.jpg" target="_blank"><img src="img/plaza_aduana2.jpg" alt="Plaza de la Aduana"></a>
+      <a href="img/boquilla_boats.jpg" target="_blank"><img src="img/boquilla_boats.jpg" alt="Barcos em La Boquilla"></a>
+      <a href="img/baru2.jpg" target="_blank"><img src="img/baru2.jpg" alt="Playa Blanca"></a>
+      <a href="img/bocagrande_skyline.jpg" target="_blank"><img src="img/bocagrande_skyline.jpg" alt="Bocagrande"></a>
+      <a href="img/colonial_centro.jpg" target="_blank"><img src="img/colonial_centro.jpg" alt="Centro colonial"></a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p class="eyebrow" style="color:var(--orange)">9 a 13 de julho de 2026</p>
+  <h2>Nos vemos no Caribe</h2>
+  <p class="lead">Três casais, cinco dias e uma cidade feita para celebrar.</p>
+  <p class="fnote">Roteiro montado com dados reais — preços de hotéis ao vivo (Booking, total de 3 quartos por 4 noites), valores de restaurantes e passeios por pessoa. Fotos reais (Wikimedia Commons) verificadas uma a uma. Vídeos do YouTube conferidos. Música de fundo: seleção estilo Buena Vista Social Club.</p>
+</footer>
+
+<!-- PLAYER (YouTube IFrame API, oculto) -->
+<div id="player-host"></div>
+<div class="music collapsed" id="music">
+  <button class="play" id="mplay" aria-label="Tocar música caribenha" title="Tocar música caribenha">▶</button>
+  <div class="lbl">Música caribenha<small>toque para ligar</small></div>
+  <div class="ctrls">
+    <button class="ic" id="mmute" aria-label="silenciar" title="silenciar">🔊</button>
+    <input type="range" id="mvol" min="0" max="100" value="12" aria-label="volume">
+  </div>
+</div>
+
+<script>
+/* nav */
+const nav=document.getElementById('nav');
+addEventListener('scroll',()=>nav.classList.toggle('solid',scrollY>60));
+const tg=document.getElementById('navtoggle'),nl=document.getElementById('navlinks');
+tg.addEventListener('click',()=>nl.classList.toggle('open'));
+nl.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nl.classList.remove('open')));
+
+/* reveal on scroll */
+const io=new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+/* hero subtle parallax */
+const hbg=document.getElementById('herobg');
+addEventListener('scroll',()=>{const y=scrollY;if(y<800)hbg.style.transform='scale(1.08) translateY('+(y*0.18)+'px)'});
+
+/* youtube facades -> iframe on click */
+document.querySelectorAll('.ytf').forEach(f=>{
+  f.addEventListener('click',()=>{
+    const id=f.dataset.id;
+    f.innerHTML='<iframe src="https://www.youtube.com/embed/'+id+'?autoplay=1&rel=0" title="vídeo" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen></iframe>';
+  });
+});
+
+/* background music via YouTube IFrame API */
+var ytPlayer=null, ytReady=false, isPlaying=false, lastVol=12;
+var tag=document.createElement('script');tag.src='https://www.youtube.com/iframe_api';
+document.head.appendChild(tag);
+function onYouTubeIframeAPIReady(){
+  ytPlayer=new YT.Player('player-host',{
+    height:'120',width:'200',videoId:'TsWILo0aPwg',
+    playerVars:{autoplay:0,controls:0,loop:1,playlist:'TsWILo0aPwg',modestbranding:1,playsinline:1},
+    events:{'onReady':function(){ytReady=true;ytPlayer.setVolume(lastVol);}}
+  });
+}
+const mplay=document.getElementById('mplay'),mvol=document.getElementById('mvol'),mmute=document.getElementById('mmute'),music=document.getElementById('music');
+mplay.addEventListener('click',()=>{
+  if(!ytReady){return;}
+  if(isPlaying){ytPlayer.pauseVideo();mplay.textContent='▶';mplay.classList.remove('on');isPlaying=false;}
+  else{ytPlayer.setVolume(parseInt(mvol.value)||12);ytPlayer.playVideo();mplay.textContent='❚❚';mplay.classList.add('on');isPlaying=true;music.classList.remove('collapsed');}
+});
+mvol.addEventListener('input',()=>{lastVol=parseInt(mvol.value);if(ytReady){ytPlayer.setVolume(lastVol);if(lastVol>0&&ytPlayer.isMuted&&ytPlayer.isMuted()){ytPlayer.unMute();mmute.textContent='🔊';}}});
+mmute.addEventListener('click',()=>{
+  if(!ytReady)return;
+  if(ytPlayer.isMuted()){ytPlayer.unMute();mmute.textContent='🔊';}
+  else{ytPlayer.mute();mmute.textContent='🔇';}
+});
+/* expand player controls on hover for desktop */
+music.addEventListener('mouseenter',()=>music.classList.remove('collapsed'));
+</script>
+</body>
+</html>
