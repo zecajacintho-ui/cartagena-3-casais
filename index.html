@@ -50,12 +50,12 @@ nav.solid .navtoggle{color:var(--terra-d)}
 /* HERO */
 .hero{height:100svh;min-height:600px;position:relative;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;overflow:hidden}
 .hero .bg{position:absolute;inset:0;background:url('img/walls_sunset.jpg') center/cover no-repeat;transform:scale(1.08)}
-.hero .scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,12,8,.45) 0%,rgba(20,12,8,.2) 40%,rgba(40,20,10,.65) 100%)}
-.hero .inner{position:relative;z-index:2;padding:0 22px;max-width:900px}
-.hero .eyebrow{color:#ffd9b0}
+.hero .scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,12,8,.58) 0%,rgba(20,12,8,.3) 40%,rgba(26,13,7,.74) 100%)}
+.hero .inner{position:relative;z-index:2;padding:0 22px;max-width:900px;text-shadow:0 2px 22px rgba(0,0,0,.5)}
+.hero .eyebrow{color:#ffe3c2;opacity:1}
 .hero h1{font-size:clamp(2.8rem,8.5vw,6rem);color:#fff;margin:.18em 0;text-shadow:0 4px 30px rgba(0,0,0,.4);font-weight:700}
 .hero .dates{font-family:var(--display);font-size:clamp(1.1rem,2.6vw,1.7rem);letter-spacing:.06em;font-weight:500}
-.hero .sub{margin-top:6px;font-size:.92rem;letter-spacing:.34em;text-transform:uppercase;opacity:.9}
+.hero .sub{margin-top:8px;font-size:.92rem;letter-spacing:.34em;text-transform:uppercase;opacity:.96}
 .scrolldown{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);z-index:2;color:#fff;font-size:1.6rem;animation:bob 2s infinite}
 @keyframes bob{0%,100%{transform:translate(-50%,0)}50%{transform:translate(-50%,10px)}}
 
@@ -63,7 +63,7 @@ nav.solid .navtoggle{color:var(--terra-d)}
 .split{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
 .split.rev .txt{order:2}
 .split img{border-radius:6px;box-shadow:var(--shadow);height:520px;width:100%;object-fit:cover}
-.split p{margin:14px 0;color:#4a4138}
+.split p{margin:14px 0;color:#4a4138;max-width:60ch}
 
 /* BAIRROS */
 .hoods{display:grid;grid-template-columns:repeat(2,1fr);gap:26px;margin-top:20px}
@@ -80,14 +80,14 @@ nav.solid .navtoggle{color:var(--terra-d)}
 .banner-note{background:linear-gradient(135deg,var(--turq),var(--turq-d));color:#fff;border-radius:10px;padding:20px 26px;
   margin:8px 0 34px;display:flex;gap:16px;align-items:center;font-size:.98rem;box-shadow:var(--shadow)}
 .banner-note b{font-weight:600}
-.hotels{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
-.hotel{background:#fff;border:1px solid var(--line);border-radius:10px;padding:22px 24px;transition:transform .35s,box-shadow .35s;display:flex;flex-direction:column;gap:8px}
+.hotels{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
+.hotel{background:#fff;border:1px solid #efe6d6;border-radius:12px;padding:28px 30px;transition:transform .35s,box-shadow .35s;display:flex;flex-direction:column;gap:9px}
 .hotel:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
 .hotel .top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
 .hotel h3{font-size:1.32rem;line-height:1.15}
-.hotel .score{background:var(--terra);color:#fff;border-radius:8px;padding:5px 9px;font-weight:600;font-family:var(--sans);font-size:.9rem;white-space:nowrap}
+.hotel .score{background:#fbf2e8;color:var(--terra-d);border:1px solid #ecd6c0;border-radius:8px;padding:4px 10px;font-weight:600;font-family:var(--sans);font-size:.82rem;white-space:nowrap}
 .hotel .where{font-size:.82rem;color:var(--turq-d);font-weight:600;letter-spacing:.02em}
-.hotel .price{margin-top:auto;padding-top:10px;border-top:1px dashed var(--line)}
+.hotel .price{margin-top:auto;padding-top:14px;border-top:1px solid #f0e7d8}
 .hotel .price .big{font-family:var(--serif);font-size:1.45rem;color:var(--terra-d);font-weight:600}
 .hotel .price .small{font-size:.82rem;color:var(--muted)}
 .hotel .couple{color:var(--turq-d);font-weight:600}
@@ -95,6 +95,8 @@ nav.solid .navtoggle{color:var(--terra-d)}
 .btn:hover{background:var(--terra-d)}
 .btn.ghost{background:transparent;color:var(--terra-d);border:1.5px solid var(--terra)}
 .btn.ghost:hover{background:var(--terra);color:#fff}
+.hotel .btn{background:transparent;color:var(--terra-d);border:1.5px solid var(--terra)}
+.hotel .btn:hover{background:var(--terra);color:#fff}
 
 /* ROTEIRO */
 .timeline{position:relative;margin-top:20px}
@@ -123,12 +125,13 @@ nav.solid .navtoggle{color:var(--terra-d)}
 
 /* VIDEO facade */
 .ytf{position:relative;border-radius:10px;overflow:hidden;cursor:pointer;box-shadow:var(--shadow);aspect-ratio:16/9;background:#000}
-.ytf img{width:100%;height:100%;object-fit:cover;opacity:.86;transition:opacity .3s,transform 1s}
-.ytf:hover img{opacity:1;transform:scale(1.04)}
-.ytf .play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
+.ytf img{width:100%;height:100%;object-fit:cover;opacity:.82;filter:saturate(.95) brightness(.9);transition:opacity .3s,transform 1s}
+.ytf:hover img{opacity:.95;transform:scale(1.04)}
+.ytf::before{content:'';position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(40,20,10,.12),rgba(28,14,8,.5))}
+.ytf .play{position:absolute;inset:0;z-index:2;display:flex;align-items:center;justify-content:center}
 .ytf .play span{width:74px;height:74px;border-radius:50%;background:rgba(189,90,51,.92);color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.7rem;padding-left:5px;box-shadow:0 8px 24px rgba(0,0,0,.35);transition:transform .3s}
 .ytf:hover .play span{transform:scale(1.12)}
-.ytf .cap{position:absolute;left:0;right:0;bottom:0;padding:14px 16px;color:#fff;font-size:.86rem;font-weight:500;
+.ytf .cap{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:14px 16px;color:#fff;font-size:.86rem;font-weight:500;
   background:linear-gradient(transparent,rgba(0,0,0,.7))}
 .ytf iframe{width:100%;height:100%;border:0;position:absolute;inset:0}
 .vid2{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}
@@ -151,6 +154,13 @@ nav.solid .navtoggle{color:var(--terra-d)}
 /* DAYTRIPS */
 .trip{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
 .trip img{border-radius:8px;box-shadow:var(--shadow);height:460px;width:100%;object-fit:cover}
+
+/* INTERLUDE full-bleed */
+.interlude{position:relative;min-height:62vh;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;background-size:cover;background-position:center;background-attachment:fixed}
+.interlude::before{content:'';position:absolute;inset:0;background:rgba(24,14,8,.46)}
+.interlude .q{position:relative;z-index:2;max-width:780px;padding:0 26px}
+.interlude .q p{font-family:var(--display);font-size:clamp(1.6rem,3.6vw,2.7rem);line-height:1.34;text-shadow:0 2px 24px rgba(0,0,0,.5)}
+.interlude .q span{display:block;margin-top:14px;font-family:var(--sans);letter-spacing:.3em;text-transform:uppercase;font-size:.72rem;opacity:.92;color:#ffe3c2}
 
 /* FOOTER */
 footer{background:var(--ink);color:#e8ddcd;text-align:center;padding:70px 24px 40px}
@@ -192,6 +202,7 @@ footer a{color:var(--orange)}
   .hero .eyebrow{letter-spacing:.14em;font-size:.58rem}
   .hero .dates{font-size:1.02rem;line-height:1.45}
   .hero .sub{font-size:.66rem;letter-spacing:.16em}
+  .interlude{background-attachment:scroll;min-height:44vh}
 }
 h1{overflow-wrap:break-word}
 </style>
@@ -378,6 +389,11 @@ h1{overflow-wrap:break-word}
   </div>
 </section>
 
+<!-- INTERLUDE 1 -->
+<section class="interlude" style="background-image:url('img/baru2.jpg')">
+  <div class="q"><p>&ldquo;Manhãs de mar calmo, tardes de areia branca.&rdquo;</p><span>O Caribe colombiano</span></div>
+</section>
+
 <!-- GASTRONOMIA -->
 <section class="section" id="gastronomia">
   <div class="wrap">
@@ -420,6 +436,11 @@ h1{overflow-wrap:break-word}
       <div class="ytf reveal" data-id="2DvGX-EaDCA"><img src="https://i.ytimg.com/vi/2DvGX-EaDCA/hqdefault.jpg" alt="Cartagena em 3 dias"><div class="play"><span>▶</span></div><div class="cap">Cartagena em 3 dias — visão geral</div></div>
     </div>
   </div>
+</section>
+
+<!-- INTERLUDE 2 -->
+<section class="interlude" style="background-image:url('img/plaza_coches_night.jpg')">
+  <div class="q"><p>&ldquo;Quando a noite cai, a cidade vira salão de baile.&rdquo;</p><span>Salsa · Champeta · Son</span></div>
 </section>
 
 <!-- PROGRAMAS LOCAIS -->
